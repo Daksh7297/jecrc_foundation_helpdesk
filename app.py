@@ -40,6 +40,10 @@ import io
 import re
 import requests
 from dotenv import load_dotenv
+import nltk
+nltk.download('punkt', quiet=True)
+nltk.download('wordnet', quiet=True)
+nltk.download('punkt_tab', quiet=True)
 
 # Load env files
 load_dotenv('.env')
