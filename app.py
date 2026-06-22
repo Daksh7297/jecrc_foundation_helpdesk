@@ -37,8 +37,6 @@ import html
 import os
 import csv
 import io
-import asyncio
-import edge_tts
 from gtts import gTTS
 import re
 import requests
@@ -364,16 +362,14 @@ def clean_text_for_speech(text):
 
     return clean
 
-async def generate_edge_tts(text, output_path):
-    communicate = edge_tts.Communicate(
-        text=text,
-        voice="hi-IN-MadhurNeural"
-    )
-    await communicate.save(output_path)
-
-    
 def text_to_speech(text, language='en'):
+    """
+    Convert text to speech using Google TTS
+    Supports Hindi ('hi') and English ('en')
+    """
     try:
+        from gtts import gTTS
+
         clean_text = clean_text_for_speech(text)
 
         if not clean_text or len(clean_text) < 2:
@@ -382,38 +378,27 @@ def text_to_speech(text, language='en'):
         if len(clean_text) > 3000:
             clean_text = clean_text[:3000] + "..."
 
+        # Hindi ya English select karo
+        tts_lang = 'hi' if language == 'hi' else 'en'
+
+        print(f"🔊 Generating audio ({len(clean_text)} chars, lang={tts_lang})")
+
+        tts = gTTS(
+            text=clean_text,
+            lang=tts_lang,
+            slow=False
+        )
+
         audio_filename = f"audio_{uuid.uuid4().hex[:12]}.mp3"
         audio_path = os.path.join("static", audio_filename)
 
         os.makedirs("static", exist_ok=True)
 
-        # Hindi → Edge TTS
-        if language == 'hi':
-            print(f"🔊 Generating Hindi audio with Edge TTS...")
-            asyncio.run(
-                generate_edge_tts(
-                    clean_text,
-                    audio_path
-                )
-            )
-
-        # English → gTTS
-        else:
-            print(f"🔊 Generating English audio with gTTS...")
-
-            tts = gTTS(
-                text=clean_text,
-                lang='en',
-                slow=False
-            )
-
-            tts.save(audio_path)
+        tts.save(audio_path)
 
         audio_size = os.path.getsize(audio_path)
 
-        print(
-            f"✅ Audio ready ({audio_size / 1024:.1f} KB)"
-        )
+        print(f"✅ Audio ready ({audio_size / 1024:.1f} KB)")
 
         return f"/static/{audio_filename}"
 
