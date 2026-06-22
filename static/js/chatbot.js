@@ -445,11 +445,19 @@ async function sendTextWithFormat(message, format) {
     try {
         const res = await fetch(API_URL, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ message, session_id: SESSION_ID })
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                message,
+                session_id: SESSION_ID
+            })
         });
 
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        if (!res.ok) {
+            throw new Error(`HTTP ${res.status}`);
+        }
+
         const data = await res.json();
         hideTyping();
 
@@ -464,39 +472,58 @@ async function sendTextWithFormat(message, format) {
 
         // Generate + play speech if needed
         if (format === 'speech' || format === 'both') {
+
             if (format === 'speech') {
                 // For speech-only, show links & media but minimal text
-                addMessage("🔊 Playing audio response...", 'bot', { links, media });
+                addMessage("🔊 Playing audio response...", 'bot', {
+                    links,
+                    media
+                });
             }
 
             try {
                 const ttsRes = await fetch(TTS_API_URL, {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ text: reply })
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        text: reply,
+                        language: 'hi'
+                    })
                 });
 
                 if (ttsRes.ok) {
                     const ttsData = await ttsRes.json();
+
                     if (ttsData.audio_url) {
                         playAudioResponse(ttsData.audio_url);
                     } else {
                         console.warn('No audio_url in TTS response');
+
                         if (format === 'speech') {
                             addMessage(reply, 'bot');
                         }
                     }
                 } else {
                     console.warn('TTS API error:', ttsRes.status);
+
                     if (format === 'speech') {
-                        addMessage("⚠️ Audio generation failed. Here's the text:", 'bot');
+                        addMessage(
+                            "⚠️ Audio generation failed. Here's the text:",
+                            'bot'
+                        );
                         addMessage(reply, 'bot', { links, media });
                     }
                 }
             } catch (ttsErr) {
                 console.warn('TTS error:', ttsErr);
+
                 if (format === 'speech') {
-                    addMessage("⚠️ Audio failed. Here's the text instead:", 'bot');
+                    addMessage(
+                        "⚠️ Audio failed. Here's the text instead:",
+                        'bot'
+                    );
                     addMessage(reply, 'bot', { links, media });
                 }
             }
@@ -506,12 +533,12 @@ async function sendTextWithFormat(message, format) {
         hideTyping();
         console.error('Chat error:', e);
         addMessage("⚠️ Something went wrong. Try again.", 'bot');
+
     } finally {
         setInputState(true);
         userInput.focus();
     }
 }
-
 // ══════════════════════════════════════
 // 🚀 QUICK TOPICS
 // ══════════════════════════════════════
