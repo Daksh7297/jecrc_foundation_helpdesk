@@ -21,8 +21,6 @@ Designed specifically for **JECRC Foundation**, SETU acts as a bridge between st
 
 ### 💬 Smart AI Chatbot
 - Instant responses to student queries
-- Context-aware conversations
-- Follow-up question handling
 - Hybrid AI-based intent classification
 
 ### 🌍 Multilingual Support
@@ -37,8 +35,8 @@ Designed specifically for **JECRC Foundation**, SETU acts as a bridge between st
 - Automatic language detection
 
 ### 📚 Comprehensive Knowledge Base
-- 154+ intents
-- 900+ training patterns
+- 200+ intents
+- 8600+ training patterns
 - Covers almost every major college-related topic
 
 ### 📊 Admin Dashboard
@@ -66,17 +64,17 @@ Designed specifically for **JECRC Foundation**, SETU acts as a bridge between st
 
 | Category | Coverage |
 |-----------|-----------|
-| Admissions | Eligibility, Documents, REAP, JEE, Deadlines |
-| Departments | CSE, IT, ECE, EE, ME, CE, AI & DS |
+| Admissions | Eligibility, Documents, REAP, JEE |
+| Departments | CSE, CSAI, AI & DS, IT, ECE, EE, ME, CE |
 | Fees | Structure, Scholarships, Refunds |
 | Placements | Companies, Packages, Training |
-| Hostel | Facilities, Rules, Mess, Visitors |
-| Academics | Exams, Attendance, Results, Credits |
+| Hostel | Facilities, Rules, Mess Food, Visitors |
+| Academics | Exams, Attendance Policy, Results, Credits |
 | Campus Life | Library, Sports, Wi-Fi, Medical |
-| Events & Clubs | Renaissance, TEDx, NSS, Technical Events |
-| Safety | Anti-Ragging, Counselling, Complaints |
-| Others | Faculty, Alumni, Contacts, Brochures |
-
+| Events & Clubs | Clubs, NSS, Technical Events |
+| Safety | Anti-Ragging |
+| Others | Pros and Cons, Faculty |
+| And Many More... | 200+ topics covering almost every major aspect of student life and college information |
 ---
 
 ## ⚙️ How It Works
@@ -86,13 +84,11 @@ When a user asks a question:
 1. User query is cleaned and normalized.
 2. Common spelling mistakes are corrected.
 3. Language (English/Hindi/Hinglish) is detected.
-4. Previous conversation context is checked.
-5. TF-IDF similarity matching is performed.
-6. Keyword matching is used as a fallback.
-7. Best intent is selected.
-8. Appropriate response is generated.
-9. Relevant links are attached.
-10. Query is stored for analytics.
+4. TF-IDF similarity matching is performed.
+5. Keyword matching is used as a fallback.
+6. Best intent is selected.
+7. Appropriate response is generated.
+8. Query is stored for analytics.
 
 ---
 
@@ -120,7 +116,6 @@ When a user asks a question:
 - BeautifulSoup4
 - FPDF2
 - gTTS
-- AssemblyAI API
 
 ---
 
@@ -129,20 +124,37 @@ When a user asks a question:
 ```text
 college_chatbot/
 │
-├── app.py
-├── chatbot_engine.py
-├── database.py
-├── config.py
-├── web_scraper.py
-├── intents.json
-├── requirements.txt
+├── app.py                 # Main Flask application and API routes
+├── chatbot_engine.py      # Core AI/NLP engine and intent classification
+├── database.py            # SQLite database operations
+├── config.py              # Application configuration settings
+├── faculty_db.py          # Faculty search and retrieval system
+├── faculty_data.json      # Faculty information database
+├── intentsupdated.json    # Knowledge base containing chatbot intents
+├── web_scraper.py         # Web scraping utilities for data collection
+├── requirements.txt       # Project dependencies
+├── render.yaml            # Render deployment configuration
+├── Procfile.txt           # Deployment process configuration
+├── chat_history.db        # Chat history database
+├── api.env                # Environment variables (not included in repository)
 │
 ├── templates/
+│   ├── index.html         # Main chatbot interface
+│   ├── admin.html         # Admin dashboard
+│   ├── admin_login.html   # Admin authentication page
+│   └── chatbot_widget.html # Embeddable chatbot widget
 │
-└── static/
+├── static/
+│   ├── css/
+│   │   └── chatbot.css    # Frontend styling
+│   │
+│   ├── js/
+│   │   └── chatbot.js     # Frontend chatbot logic
+│   │
+│   └── images/            # Project images and assets
+│
+└── __pycache__/           # Python cache files
 ```
-
----
 
 ## 🚀 Getting Started
 
@@ -201,25 +213,12 @@ http://127.0.0.1:5000
 
 ---
 
-## 🔮 Future Improvements
-
-- ChatGPT/Gemini fallback integration
-- WhatsApp chatbot deployment
-- ERP integration
-- Mobile application
-- Self-learning capabilities
-- BERT-based intent classification
-- Regional language support
-- Sentiment analysis
-- Document understanding and processing
-
----
 
 ## 👨‍💻 Developer
 
 ### Daksh
 
-B.Tech Computer Science & Engineering  
+B.Tech Computer Science & Engineering (1st Year)  
 JECRC Foundation, Jaipur
 
 ---
