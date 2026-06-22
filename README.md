@@ -9,7 +9,7 @@
 
 ## 📖 Overview
 
-SETU is an AI-powered college helpdesk chatbot developed by **Daksh** to simplify access to college-related information for students, parents, and aspirants.
+SETU is an AI-powered college helpdesk chatbot to simplify access to college-related information for students, parents, and aspirants.
 
 The chatbot provides instant answers related to admissions, fees, hostel facilities, academics, placements, campus life, events, scholarships, and much more through a simple conversational interface.
 
