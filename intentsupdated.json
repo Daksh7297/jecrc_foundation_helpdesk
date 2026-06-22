@@ -7265,6 +7265,12 @@
         "jecrc health facility",
         "jecrc doctor facility",
         "jecrc medical support"
+      ],
+      "responses": [
+        "🏥 **Medical Facilities:**\nBasic first aid support is available on campus for minor injuries and health issues.\n\n🚑 For serious injuries or medical emergencies, students can visit Mahatma Gandhi Hospital, located approximately 5 km from the campus.\n\n📞 For ambulance services, call 108 immediately and contact the campus security team for assistance."
+      ],
+      "responses_hi": [
+        "🏥 **मेडिकल सुविधाएं:**\nछोटी चोटों और सामान्य स्वास्थ्य समस्याओं के लिए कैंपस में बेसिक फर्स्ट एड सुविधा उपलब्ध है।\n\n🚑 गंभीर चोट या मेडिकल इमरजेंसी की स्थिति में छात्र लगभग 5 किमी दूर स्थित महात्मा गांधी अस्पताल जा सकते हैं।\n\n📞 एम्बुलेंस सेवा के लिए तुरंत 108 पर कॉल करें और सहायता के लिए कैंपस सिक्योरिटी टीम से संपर्क करें।"
       ]
     },
     {
