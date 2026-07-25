@@ -397,8 +397,7 @@ B.Tech Computer Science & Engineering
 
 JECRC Foundation, Jaipur
 
-GitHub: https://github.com/heydaksh7297
-
+GitHub: https://github.com/Daksh7297
 ---
 
 # 🤝 Contributing
