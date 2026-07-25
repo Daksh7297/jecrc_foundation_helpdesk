@@ -2,7 +2,7 @@
 ============================================================
   JECRC Foundation - College Helpdesk AI Chatbot
   Configuration File
-  Project: J-TECHTRIX 7.0
+  Project: JECRC Foundation Helpdesk AI
   
   🔧 UPDATED: Admin authentication + security settings
   🔧 FIXED: Static SECRET_KEY (no session loss on restart)
