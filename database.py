@@ -447,3 +447,4 @@ class ChatDatabase:
 
             cursor.execute(query, params)
             return [dict(row) for row in cursor.fetchall()]
+
