@@ -371,7 +371,6 @@ https://setu-2cn0.onrender.com/
 - Faculty Information System
 - FAQ Automation
 - Campus Information Portal
-- Educational Institutions
 
 ---
 
