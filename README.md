@@ -3,127 +3,107 @@
 
 🚀 **Live Demo:** https://setu-2cn0.onrender.com/
 
-💬 **English | हिन्दी | Hinglish Support**
+💬 **Supports:** English | हिन्दी | Hinglish
 
 ---
 
-## 📖 Overview
+# 📖 Overview
 
 SETU is an AI-powered college helpdesk chatbot developed for **JECRC Foundation** to simplify access to college-related information for students, parents, and aspirants.
 
-Instead of searching multiple webpages or visiting different offices, users can simply ask questions in natural language and receive instant responses. The chatbot supports English, Hindi, and Hinglish, making it accessible to a wider audience.
+Instead of searching through multiple webpages, visiting different offices, or waiting for admission helplines, users can simply ask questions in natural language and receive instant responses.
 
-Using Natural Language Processing (NLP) and hybrid intent classification, SETU can answer questions related to admissions, departments, fees, scholarships, placements, hostel facilities, academics, campus life, faculty, and many other college services.
+The chatbot understands **English, Hindi, and Hinglish**, making it accessible to a wider audience while providing information related to admissions, departments, faculty, academics, hostel, placements, scholarships, campus facilities, and many other college services.
+
+SETU acts as a digital bridge between students and college information by providing quick, accurate, and interactive assistance 24×7.
 
 ---
 
-## ❗ Problem Statement
+# ❗ Problem Statement
 
-Students frequently face challenges while searching for accurate college information because:
+Students often face difficulties while searching for college-related information because:
 
 - Information is scattered across multiple webpages
 - Office timings are limited
 - Admission helplines remain busy
-- Students repeatedly ask the same questions
-- Hindi-medium students struggle with English-only information
-- Finding faculty and department information takes time
+- Students repeatedly ask similar questions
+- Finding department or faculty information takes time
+- Hindi-speaking students struggle with English-only information
 
-SETU solves these problems by providing instant, AI-powered assistance 24×7.
+SETU addresses these challenges by providing a single AI-powered conversational platform that delivers information instantly.
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-### 🤖 AI Chatbot
-- Instant AI-powered responses
-- Natural conversation flow
-- Context-aware follow-up support
+## 🤖 AI Chatbot
+
+- Instant responses to student queries
 - Intelligent intent recognition
-- Hybrid NLP model
+- Hybrid NLP-based response generation
+- Natural language understanding
 
-### 🌍 Multilingual Support
+---
+
+## 🌍 Multilingual Support
+
 - English
 - Hindi
 - Hinglish
 - Automatic language detection
 
-### 🧠 Smart NLP Engine
-- TF-IDF Vectorization
-- Cosine Similarity
-- Keyword Matching
-- Context Handling
-- Confidence Scoring
-- Automatic Typo Correction
-- 230+ spelling corrections
-- 3000+ vocabulary words
+---
 
-### 🎤 Voice Assistant
+## 🧠 NLP Engine
+
+- TF-IDF Vectorization
+- Cosine Similarity Matching
+- Keyword Matching
+- Automatic Typo Correction
+- Vocabulary-based preprocessing
+
+---
+
+## 🎤 Voice Support
+
 - Voice-to-Text using AssemblyAI
 - Text-to-Speech using Google TTS
-- Microsoft Edge TTS support
-- Voice conversation support
+- Microsoft Edge TTS Support
 
-### 📚 Knowledge Base
-- 203 College Intents
-- 8,883+ Training Patterns
-- 2,252 Auto-generated Keywords
+---
+
+## 📚 Knowledge Base
+
+- 203 predefined intents
+- 8,883+ training patterns
+- English responses
+- Hindi responses
+- Faculty directory
+- Department information
+- College information
+
+---
+
+## 👨‍🏫 Faculty Information
+
+- Faculty Search
+- Department-wise Faculty Directory
 - 265 Faculty Members
 - 9 Academic Departments
-- English & Hindi Responses for every intent
-
-### 🏫 Covers Information About
-
-- Admission Process
-- Eligibility
-- Required Documents
-- REAP Counselling
-- Fee Structure
-- Scholarships
-- Hostel Facilities
-- Hostel Rules
-- Departments
-- Faculty Details
-- Placements
-- Companies
-- Internship Opportunities
-- Academic Calendar
-- Examination Rules
-- Attendance
-- RTU Information
-- Campus Life
-- Clubs
-- Sports
-- Library
-- Medical Facilities
-- Transport
-- Parking
-- Wi-Fi
-- Anti Ragging
-- Student Support
-- Emergency Contacts
-- Rankings
-- Recognition
-- Campus Facilities
-
-...and much more.
 
 ---
 
 ## 📊 Admin Dashboard
 
-The chatbot includes a complete admin portal featuring:
-
-- Secure Login
-- Real-time Chat Monitoring
-- Daily & Weekly Analytics
+- Secure Admin Login
+- Chat Analytics
+- Daily Statistics
+- Weekly Statistics
 - Interactive Charts
-- Recent Chat History
-- Topic Distribution
-- Confidence Analysis
+- Recent Chat Monitoring
 - Unresolved Query Tracking
 - CSV Export
-- PDF Report Generation
-- Usage Statistics
+- PDF Report Export
 
 ---
 
@@ -131,70 +111,144 @@ The chatbot includes a complete admin portal featuring:
 
 - Rate Limiting
 - Input Sanitization
-- Secure Admin Authentication
-- Environment Variables
+- Admin Authentication
+- Environment Variable Protection
 - Automatic Chat Cleanup
-- Protected API Keys
 
 ---
 
-## ⚙️ AI Workflow
+## 📱 Responsive Design
 
-When a user asks a question:
-
-1. User query is cleaned and normalized.
-2. Common spelling mistakes are corrected.
-3. Language is automatically detected.
-4. TF-IDF Vectorization is performed.
-5. Cosine Similarity score is calculated.
-6. Keyword Matching improves confidence.
-7. Best matching intent is selected.
-8. Response is returned in the user's language.
-9. Chat history is stored for analytics.
+- Desktop Support
+- Mobile Friendly
+- Lightweight Interface
 
 ---
 
-## 🛠️ Tech Stack
+# 🏫 Topics Covered
 
-### Backend
+The chatbot provides information about:
+
+- Admission Process
+- Eligibility Criteria
+- Required Documents
+- REAP Counselling
+- JEE Admission
+- Lateral Entry
+- Departments
+- Faculty Information
+- Fee Structure
+- Scholarships
+- Refund Policy
+- Hostel Facilities
+- Hostel Rules
+- Mess Facilities
+- Placements
+- Internship
+- Training
+- Academics
+- Examination
+- Attendance
+- RTU
+- Library
+- Sports
+- Clubs
+- Events
+- Wi-Fi
+- Medical Facilities
+- Transport
+- Parking
+- Anti Ragging
+- Student Support
+- Emergency Contacts
+- Rankings
+- Recognition
+- Campus Facilities
+
+and many more...
+
+---
+
+# 📊 Knowledge Base Coverage
+
+| Category | Topics |
+|----------|--------|
+| Admission | Admission Process, Eligibility, Documents, REAP, JEE, Reservation |
+| Departments | CSE, CSE(AI), AI & DS, IT, ECE, EE, ME, CE |
+| Fees | Fee Structure, Scholarships, Refund Policy |
+| Placements | Companies, Packages, Training, Internship |
+| Hostel | Rooms, Rules, Mess, Visitors, Security |
+| Academics | Exams, Attendance, Results, Credits, RTU |
+| Campus Life | Library, Clubs, Sports, Medical, Wi-Fi |
+| Safety | Anti-Ragging, Grievance, Counselling |
+| General | Rankings, Recognition, Facilities |
+
+---
+
+# ⚙️ How It Works
+
+When a user asks a question, SETU follows these steps:
+
+1. Cleans and normalizes the user query.
+2. Corrects common spelling mistakes.
+3. Detects the input language.
+4. Performs TF-IDF Vectorization.
+5. Calculates Cosine Similarity.
+6. Applies Keyword Matching.
+7. Selects the best matching intent.
+8. Returns the response in the appropriate language.
+9. Stores chat history for analytics.
+
+---
+
+# 🛠 Tech Stack
+
+## Backend
+
 - Python
 - Flask
 
-### AI / NLP
+## AI / NLP
+
 - Scikit-Learn
 - TF-IDF Vectorization
 - Cosine Similarity
 - NLTK
 - RapidFuzz
 
-### Database
+## Database
+
 - SQLite
 
-### Frontend
+## Frontend
+
 - HTML
 - CSS
 - JavaScript
 
-### Voice AI
+## Voice AI
+
 - AssemblyAI
-- Google TTS
+- Google TTS (gTTS)
 - Microsoft Edge TTS
 
-### Other Libraries
+## Other Libraries
+
 - BeautifulSoup4
 - Requests
 - FPDF2
 
-### Deployment
+## Deployment
+
 - Render
 - GitHub
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
-college_chatbot/
+Setu/
 │
 ├── app.py
 ├── chatbot_engine.py
@@ -220,16 +274,41 @@ college_chatbot/
 │   ├── css/
 │   ├── js/
 │   └── images/
+│
+└── README.md
 ```
 
-## 🚀 Installation
+---
+
+# 🚀 Getting Started
+
+## Clone Repository
 
 ```bash
 git clone https://github.com/heydaksh7297/Setu.git
+
 cd Setu
+```
 
+## Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
+## Environment Variables
+
+Create an `api.env` file and add:
+
+```text
+ASSEMBLYAI_API_KEY=YOUR_API_KEY
+```
+
+---
+
+## Run Application
+
+```bash
 python app.py
 ```
 
@@ -241,55 +320,77 @@ http://127.0.0.1:5000
 
 ---
 
-## 📈 Performance
+# 🌐 Live Demo
+
+https://setu-2cn0.onrender.com/
+
+---
+
+# 📈 Performance
 
 | Metric | Value |
-|----------|----------:|
+|---------|-------:|
 | Total Intents | 203 |
 | Training Patterns | 8,883+ |
-| Faculty Records | 265 |
+| Faculty Members | 265 |
 | Departments | 9 |
-| Auto Keywords | 2,252 |
-| Typo Corrections | 230+ |
-| Vocabulary Size | 3,000+ |
 | Overall Accuracy | 85–90% |
 | Exact Match Accuracy | ~95% |
 | Hybrid Model Accuracy | ~92% |
-| Hindi Detection Accuracy | >90% |
+| Hindi Detection | >90% |
 | Average Response Time | <1 Second |
 
 ---
 
-## 🎯 Applications
+# 📌 Key Highlights
 
-- Student Helpdesk
-- College Information System
-- Admission Support
-- Faculty Information Portal
-- Campus Assistant
+- AI-Powered College Helpdesk
+- English, Hindi & Hinglish Support
+- Intelligent Intent Recognition
+- TF-IDF Based NLP
+- Keyword Matching
+- Typo Correction
+- Voice Chat
+- Faculty Search
+- SQLite Chat History
+- Admin Dashboard
+- Live Analytics
+- CSV Export
+- PDF Export
+- Responsive Design
+- REST APIs
+- Automatic Data Cleanup
+
+---
+
+# 🎯 Applications
+
+- College Helpdesk
+- Admission Assistance
+- Student Support
+- Faculty Information System
 - FAQ Automation
-- Student Query Resolution
+- Campus Information Portal
 - Educational Institutions
 
 ---
 
-## 🔮 Future Scope
+# 🔮 Future Scope
 
-- ChatGPT/Gemini Integration
-- WhatsApp Chatbot
+- LLM Integration (ChatGPT/Gemini)
+- WhatsApp Bot
 - ERP Integration
-- Android & iOS App
-- Self-learning AI
-- BERT-based Intent Detection
-- Multi-college Support
+- Android Application
+- iOS Application
+- Self-Learning AI
 - Regional Language Support
 - Website Widget
-- Sentiment Analysis
+- Sentiment Detection
 - Document Processing
 
 ---
 
-## 👨‍💻 Developer
+# 👨‍💻 Developer
 
 **Daksh**
 
@@ -297,16 +398,20 @@ B.Tech Computer Science & Engineering
 
 JECRC Foundation, Jaipur
 
----
-
-## 🌐 Live Demo
-
-https://setu-2cn0.onrender.com/
+GitHub: https://github.com/heydaksh7297
 
 ---
 
-## ⭐ Support
+# 🤝 Contributing
 
-If you found this project useful, please consider giving it a **Star ⭐**.
+Contributions, suggestions, bug reports, and feature requests are welcome.
 
-Contributions, suggestions, and feedback are always welcome.
+Feel free to fork the repository, create a new branch, and submit a pull request.
+
+---
+
+# ⭐ Support
+
+If you found this project useful, please consider giving this repository a **Star ⭐**.
+
+It helps others discover the project and motivates further development.
