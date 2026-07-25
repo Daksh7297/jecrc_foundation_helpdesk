@@ -1,7 +1,7 @@
 # 🎓 SETU
 ### AI-Powered College Helpdesk Chatbot for JECRC Foundation
 
-🚀 **Live Demo:** https://jecrc-foundation-helpdesk.onrender.com/
+🚀 **Live Demo:** https://setu-2cn0.onrender.com/
 
 💬 **English | हिन्दी | Hinglish Support**
 
@@ -9,86 +9,148 @@
 
 ## 📖 Overview
 
-SETU is an AI-powered college helpdesk chatbot to simplify access to college-related information for students, parents, and aspirants.
+SETU is an AI-powered college helpdesk chatbot developed for **JECRC Foundation** to simplify access to college-related information for students, parents, and aspirants.
 
-The chatbot provides instant answers related to admissions, fees, hostel facilities, academics, placements, campus life, events, scholarships, and much more through a simple conversational interface.
+Instead of searching multiple webpages or visiting different offices, users can simply ask questions in natural language and receive instant responses. The chatbot supports English, Hindi, and Hinglish, making it accessible to a wider audience.
 
-Designed specifically for **JECRC Foundation**, SETU acts as a bridge between students and college information by making important details accessible anytime, anywhere.
+Using Natural Language Processing (NLP) and hybrid intent classification, SETU can answer questions related to admissions, departments, fees, scholarships, placements, hostel facilities, academics, campus life, faculty, and many other college services.
+
+---
+
+## ❗ Problem Statement
+
+Students frequently face challenges while searching for accurate college information because:
+
+- Information is scattered across multiple webpages
+- Office timings are limited
+- Admission helplines remain busy
+- Students repeatedly ask the same questions
+- Hindi-medium students struggle with English-only information
+- Finding faculty and department information takes time
+
+SETU solves these problems by providing instant, AI-powered assistance 24×7.
 
 ---
 
 ## ✨ Features
 
-### 💬 Smart AI Chatbot
-- Instant responses to student queries
-- Hybrid AI-based intent classification
+### 🤖 AI Chatbot
+- Instant AI-powered responses
+- Natural conversation flow
+- Context-aware follow-up support
+- Intelligent intent recognition
+- Hybrid NLP model
 
 ### 🌍 Multilingual Support
-- English support
-- Hindi support
-- Hinglish support
-
-### 🧠 Intelligent NLP Engine
-- TF-IDF + Cosine Similarity matching
-- Keyword-based classification
-- Typo correction using Levenshtein Distance
+- English
+- Hindi
+- Hinglish
 - Automatic language detection
 
-### 📚 Comprehensive Knowledge Base
-- 200+ intents
-- 8600+ training patterns
-- Covers almost every major college-related topic
+### 🧠 Smart NLP Engine
+- TF-IDF Vectorization
+- Cosine Similarity
+- Keyword Matching
+- Context Handling
+- Confidence Scoring
+- Automatic Typo Correction
+- 230+ spelling corrections
+- 3000+ vocabulary words
 
-### 📊 Admin Dashboard
-- Chat analytics
-- Query monitoring
-- Unresolved query management
-- CSV/PDF export support
-- Real-time statistics and charts
+### 🎤 Voice Assistant
+- Voice-to-Text using AssemblyAI
+- Text-to-Speech using Google TTS
+- Microsoft Edge TTS support
+- Voice conversation support
 
-### 🔒 Security Features
-- Rate limiting
-- Input sanitization
-- Admin authentication
-- Environment variable protection
-- Automatic old-data cleanup
+### 📚 Knowledge Base
+- 203 College Intents
+- 8,883+ Training Patterns
+- 2,252 Auto-generated Keywords
+- 265 Faculty Members
+- 9 Academic Departments
+- English & Hindi Responses for every intent
 
-### 📱 Responsive Design
-- Mobile-friendly UI
-- Desktop support
-- Fast and lightweight interface
+### 🏫 Covers Information About
+
+- Admission Process
+- Eligibility
+- Required Documents
+- REAP Counselling
+- Fee Structure
+- Scholarships
+- Hostel Facilities
+- Hostel Rules
+- Departments
+- Faculty Details
+- Placements
+- Companies
+- Internship Opportunities
+- Academic Calendar
+- Examination Rules
+- Attendance
+- RTU Information
+- Campus Life
+- Clubs
+- Sports
+- Library
+- Medical Facilities
+- Transport
+- Parking
+- Wi-Fi
+- Anti Ragging
+- Student Support
+- Emergency Contacts
+- Rankings
+- Recognition
+- Campus Facilities
+
+...and much more.
 
 ---
 
-## 🏫 Topics Covered
+## 📊 Admin Dashboard
 
-| Category | Coverage |
-|-----------|-----------|
-| Admissions | Eligibility, Documents, REAP, JEE |
-| Departments | CSE, CSAI, AI & DS, IT, ECE, EE, ME, CE |
-| Fees | Structure, Scholarships, Refunds |
-| Placements | Companies, Packages, Training |
-| Hostel | Facilities, Rules, Mess Food, Visitors |
-| Academics | Exams, Attendance Policy, Results, Credits |
-| Campus Life | Library, Sports, Wi-Fi, Medical |
-| Events & Clubs | Clubs, NSS, Technical Events |
-| Safety | Anti-Ragging |
-| Others | Pros and Cons, Faculty |
-| And Many More... | 200+ topics covering almost every major aspect of student life and college information |
+The chatbot includes a complete admin portal featuring:
+
+- Secure Login
+- Real-time Chat Monitoring
+- Daily & Weekly Analytics
+- Interactive Charts
+- Recent Chat History
+- Topic Distribution
+- Confidence Analysis
+- Unresolved Query Tracking
+- CSV Export
+- PDF Report Generation
+- Usage Statistics
+
 ---
 
-## ⚙️ How It Works
+## 🔒 Security Features
+
+- Rate Limiting
+- Input Sanitization
+- Secure Admin Authentication
+- Environment Variables
+- Automatic Chat Cleanup
+- Protected API Keys
+
+---
+
+## ⚙️ AI Workflow
 
 When a user asks a question:
 
 1. User query is cleaned and normalized.
 2. Common spelling mistakes are corrected.
-3. Language (English/Hindi/Hinglish) is detected.
-4. TF-IDF similarity matching is performed.
-5. Keyword matching is used as a fallback.
-6. Best intent is selected.
-7. Appropriate response is generated.
-8. Query is stored for analytics.
+3. Language is automatically detected.
+4. TF-IDF Vectorization is performed.
+5. Cosine Similarity score is calculated.
+6. Keyword Matching improves confidence.
+7. Best matching intent is selected.
+8. Response is returned in the user's language.
+9. Chat history is stored for analytics.
 
 ---
 
@@ -103,6 +165,7 @@ When a user asks a question:
 - TF-IDF Vectorization
 - Cosine Similarity
 - NLTK
+- RapidFuzz
 
 ### Database
 - SQLite
@@ -112,10 +175,19 @@ When a user asks a question:
 - CSS
 - JavaScript
 
-### Additional Tools
+### Voice AI
+- AssemblyAI
+- Google TTS
+- Microsoft Edge TTS
+
+### Other Libraries
 - BeautifulSoup4
+- Requests
 - FPDF2
-- gTTS
+
+### Deployment
+- Render
+- GitHub
 
 ---
 
@@ -124,62 +196,46 @@ When a user asks a question:
 ```text
 college_chatbot/
 │
-├── app.py                 # Main Flask application and API routes
-├── chatbot_engine.py      # Core AI/NLP engine and intent classification
-├── database.py            # SQLite database operations
-├── config.py              # Application configuration settings
-├── faculty_db.py          # Faculty search and retrieval system
-├── faculty_data.json      # Faculty information database
-├── intentsupdated.json    # Knowledge base containing chatbot intents
-├── web_scraper.py         # Web scraping utilities for data collection
-├── requirements.txt       # Project dependencies
-├── render.yaml            # Render deployment configuration
-├── Procfile.txt           # Deployment process configuration
-├── chat_history.db        # Chat history database
-├── api.env                # Environment variables (not included in repository)
+├── app.py
+├── chatbot_engine.py
+├── database.py
+├── config.py
+├── faculty_db.py
+├── faculty_data.json
+├── intentsupdated.json
+├── web_scraper.py
+├── requirements.txt
+├── render.yaml
+├── Procfile
+├── api.env
+├── chat_history.db
 │
 ├── templates/
-│   ├── index.html         # Main chatbot interface
-│   ├── admin.html         # Admin dashboard
-│   ├── admin_login.html   # Admin authentication page
-│   └── chatbot_widget.html # Embeddable chatbot widget
+│   ├── index.html
+│   ├── admin.html
+│   ├── admin_login.html
+│   └── chatbot_widget.html
 │
 ├── static/
 │   ├── css/
-│   │   └── chatbot.css    # Frontend styling
-│   │
 │   ├── js/
-│   │   └── chatbot.js     # Frontend chatbot logic
-│   │
-│   └── images/            # Project images and assets
-│
-└── __pycache__/           # Python cache files
+│   └── images/
 ```
 
-## 🚀 Getting Started
-
-### Clone the Repository
+## 🚀 Installation
 
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
-cd your-repository-name
-```
+git clone https://github.com/heydaksh7297/Setu.git
+cd Setu
 
-### Install Dependencies
-
-```bash
 pip install -r requirements.txt
-```
 
-### Run the Application
-
-```bash
 python app.py
 ```
 
-Open:
+Open
 
-```text
+```
 http://127.0.0.1:5000
 ```
 
@@ -188,7 +244,14 @@ http://127.0.0.1:5000
 ## 📈 Performance
 
 | Metric | Value |
-|----------|----------|
+|----------|----------:|
+| Total Intents | 203 |
+| Training Patterns | 8,883+ |
+| Faculty Records | 265 |
+| Departments | 9 |
+| Auto Keywords | 2,252 |
+| Typo Corrections | 230+ |
+| Vocabulary Size | 3,000+ |
 | Overall Accuracy | 85–90% |
 | Exact Match Accuracy | ~95% |
 | Hybrid Model Accuracy | ~92% |
@@ -197,42 +260,53 @@ http://127.0.0.1:5000
 
 ---
 
-## 🎯 Problem Solved
+## 🎯 Applications
 
-✔ Information scattered across multiple webpages
-
-✔ Repetitive student queries
-
-✔ Limited office timings
-
-✔ Busy admission helplines
-
-✔ Language barriers for Hindi-speaking students
-
-✔ Delayed access to important information
+- Student Helpdesk
+- College Information System
+- Admission Support
+- Faculty Information Portal
+- Campus Assistant
+- FAQ Automation
+- Student Query Resolution
+- Educational Institutions
 
 ---
 
+## 🔮 Future Scope
+
+- ChatGPT/Gemini Integration
+- WhatsApp Chatbot
+- ERP Integration
+- Android & iOS App
+- Self-learning AI
+- BERT-based Intent Detection
+- Multi-college Support
+- Regional Language Support
+- Website Widget
+- Sentiment Analysis
+- Document Processing
+
+---
 
 ## 👨‍💻 Developer
 
-### Daksh
+**Daksh**
 
-B.Tech Computer Science & Engineering (1st Year)  
+B.Tech Computer Science & Engineering
+
 JECRC Foundation, Jaipur
 
 ---
 
-## 🌐 Try It Live
+## 🌐 Live Demo
 
-### https://jecrc-foundation-helpdesk.onrender.com/
-
-If you'd like to test the chatbot yourself, simply open the link above and start chatting.
+https://setu-2cn0.onrender.com/
 
 ---
 
 ## ⭐ Support
 
-If you found this project useful, consider giving the repository a **Star ⭐**.
+If you found this project useful, please consider giving it a **Star ⭐**.
 
-Feedback, suggestions, and contributions are always welcome.
+Contributions, suggestions, and feedback are always welcome.
